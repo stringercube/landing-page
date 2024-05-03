@@ -1,14 +1,30 @@
+/* Type styles */
+
 body {
     background: #eee;
-    font-family: 'Roboto';
+    font-family: 'Roboto'; /* referred to in html */
     display: flex;
     flex-direction: column;
+    margin:0;
   }
 
-ul {
-    display: flex;
-    list-style-type: none;
+button {
+    background-color: #3882f6;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 28px;
+    border-radius: 5px;
+    border-width: 0;
+    flex-shrink: 0;
 }
+
+a {
+    color: inherit;
+    text-decoration: inherit; 
+  }
+
+/* Class styles from common to section, top to bottom in website */
 
 .header, .intro, .footer {
     background: #1F2937;
@@ -21,6 +37,8 @@ ul {
 }
 
 .header ul {
+    display: flex;
+    list-style-type: none;
     font-size: 18px;
     gap: 16px;
     padding-right: 15%;
@@ -39,10 +57,11 @@ ul {
     justify-content: space-around;
 }
 
-.intro .container {
+.container {
     display: flex;
     flex-direction: column;
     margin: 0;
+    padding-right: 40px;
     justify-content: space-between;
     align-items: start;
 }
@@ -54,17 +73,6 @@ ul {
 .container h1 {
     font-size: 48px;
     font-weight: 900;
-}
-
-button {
-    background-color: #3882f6;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 8px 28px;
-    border-radius: 5px;
-    border-width: 0;
-    flex-shrink: 0;
 }
 
 .random {
@@ -83,6 +91,7 @@ button {
 .imagelist {
     display: flex;
     justify-content: space-evenly;
+    align-items: flex-start;
     gap: 48px;
 }
 
@@ -111,9 +120,42 @@ button {
 
 .quote {
     background: #E5E7Eb;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    padding: 5% 20% 5%;
 }
 
-.quote h2 {
-    font-size: 36px;
+#quotename {
+    font-size: 24px;
     font-weight: 900;
+    font-style: normal;
+    text-align: right;
+}
+
+.callaction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 15% 5%;
+    padding: 3% 10%;
+    color: white;
+    background-color: #3882f6;
+    border-radius: 5px;
+}
+
+.callaction p {
+    padding: 2px;
+    margin: 0;
+}
+
+.callaction button {
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+}
+
+.footer {
+    text-align: center;
+    padding: 16px 0px;
 }
